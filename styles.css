@@ -42,18 +42,21 @@ ul {
     img {
       
       border-radius: 4px;
-      padding: 5px;
+     padding: 15px;
       width: 150px;
+      height: 150px;
     }
     .top-left {
       font-family: 'Times New Roman', Times, serif;
       font-color:rgb(255, 140, 0);
       position: absolute;
-      top: 8px;
-      left: 16px;
+      top: 17px;
+      left: 15px;
     }
-    
-    
-    
-    
+    table {
+      width: 50%;
+    }
+    h1 {
+      text-align: center;
+    }
     
