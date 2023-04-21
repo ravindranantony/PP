@@ -24,13 +24,36 @@ ul {
     h1{
         color: black;  
     }
-    img{width: 200px;border-radius: 50%;}
+    
     #ish{
         background-color: red;
     }
     #prasan{
         background-color: blue;
     }
-    .test{
-        color: yellow;
+    
+  
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
     }
+    
+    img {
+      
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+    }
+    .top-left {
+      font-family: 'Times New Roman', Times, serif;
+      font-color:rgb(255, 140, 0);
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+    
+    
+    
+    
+    
