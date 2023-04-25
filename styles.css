@@ -24,13 +24,50 @@ ul {
     h1{
         color: black;  
     }
-    img{width: 200px;border-radius: 50%;}
+    
     #ish{
         background-color: red;
     }
     #prasan{
         background-color: blue;
     }
-    .test{
-        color: yellow;
+    
+  
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
     }
+    
+    img {
+      
+      border-radius: 5px;
+     padding: 15px;
+      width: 150px;
+      height: 150px;
+    }
+    .top-left {
+      font-family: 'Times New Roman', Times, serif;
+      font-color:rgb(255, 140, 0);
+      position: absolute;
+      top: 17px;
+      left: 15px;
+    }
+    table {
+      width: 50%;
+    }
+    h1 {
+      text-align: center;
+    }
+    td {
+      
+      text-align: center;
+    }
+    #resume{
+      background-color: greenyellow;
+      color: red;
+      border-radius: 5px;
+      padding: 5px;
+    }
+    
+    
