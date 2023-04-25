@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PP</title>
   <link rel="stylesheet" href="styles.css">
-
+  <script>
+    function myFunction() {
+      document.getElementById("download-resume-btn").innerHTML = "Resume downloaded";
+    }
+    </script>
 </head>
 
 <body>
@@ -64,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td><a href="resume/Prasanna CV - 2023.pdf" download="prasanna-cv"><button class="download-resume" role="button">Download Resume</button></a></td>
+      <td><a href="resume/Prasanna CV - 2023.pdf" download="prasanna-cv"><button id='download-resume-btn' onclick="myFunction()" class="download-resume" role="button">Download Resume</button></a></td>
       <td><a href="resume/pariresume.pdf" download="pariresume"> Download Resume</a></td>
       <td><a href="resume/Sankeertana_CV_Bank2.pdf" download="Sankeertana Resume"><button style ="color: green;"> Download Resume</button></a></td>
       <td><a href="resume/Hema_cv.pdf" download="Hema Resume"><button id ="resume"> Download Resume</button></a></td>
