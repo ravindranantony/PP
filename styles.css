@@ -63,5 +63,11 @@ ul {
       
       text-align: center;
     }
+    #resume{
+      background-color: greenyellow;
+      color: red;
+      border-radius: 5px;
+      padding: 5px;
+    }
     
     
