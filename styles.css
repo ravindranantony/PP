@@ -40,7 +40,6 @@ ul {
     }
     .top-left {
       font-family: 'Times New Roman', Times, serif;
-      color:rgb(18, 18, 18);
       position: absolute;
       top: 17px;
       left: 15px;
@@ -81,8 +80,8 @@ ul {
       cursor: pointer;
     }
     #coverletter{
-      background-color: greenyellow;
-      color: red;
+      background-color: lightseagreen;
+      color: white;
       border-radius: 5px;
       padding: 5px;
     }
