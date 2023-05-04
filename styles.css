@@ -24,14 +24,6 @@ ul {
     h1{
         color: black;  
     }
-    
-    #ish{
-        background-color: red;
-    }
-    #prasan{
-        background-color: blue;
-    }
-    
   
     .container {
       position: relative;
@@ -48,10 +40,17 @@ ul {
     }
     .top-left {
       font-family: 'Times New Roman', Times, serif;
-      color:rgb(255, 140, 0);
       position: absolute;
       top: 17px;
       left: 15px;
+    }
+    .bottom-left {
+      font-family: 'Times New Roman', Times, serif;
+      color:rgb(14, 14, 14);
+      position: absolute;
+      bottom: 17px;
+      left: 15px;
+      font-size: 25px;
     }
     table {
       width: 50%;
@@ -63,18 +62,38 @@ ul {
       
       text-align: center;
     }
-    #resume{
-      background-color: greenyellow;
-      color: red;
+    .resume{
+      background-color: rgb(43, 41, 41);
+      color: rgb(248, 245, 245);
       border-radius: 5px;
       padding: 5px;
     }
-  
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
     #coverletter{
       background-color: lightseagreen;
       color: white;
       border-radius: 5px;
       padding: 5px;
     }
-    
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
     
