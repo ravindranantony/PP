@@ -102,8 +102,7 @@ ul {
     #files{
       background-color: aqua;
       color: black;
-      padding: auto;
-      margin: auto;
+      padding: 5px;
       border-radius: 5px;
       cursor: pointer;
     }
