@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator made by Ravi</title>
+    <style>
+      button {
+        font-size: 24px;
+        padding: 12px 24px;
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Calculator made by Ravi</h1>
+    <input type="text" id="result" style="width: 280px; height: 50px;" readonly>
+    <br>
+    <button onclick="calculate('7')">7</button>
+    <button onclick="calculate('8')">8</button>
+    <button onclick="calculate('9')">9</button>
+    <button onclick="calculate('/')">/</button>
+    <br>
+    <button onclick="calculate('4')">4</button>
+    <button onclick="calculate('5')">5</button>
+    <button onclick="calculate('6')">6</button>
+    <button onclick="calculate('*')">*</button>
+    <br>
+    <button onclick="calculate('1')">1</button>
+    <button onclick="calculate('2')">2</button>
+    <button onclick="calculate('3')">3</button>
+    <button onclick="calculate('-')">-</button>
+    <br>
+    <button onclick="calculate('0')">0</button>
+    <button onclick="calculate('.')">.</button>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="clearResult()">C</button>
+    <br>
+    <button onclick="calculateResult()">=</button>
+    <script>
+      let currentResult = 0;
+      let operator = '';
+      let previousResult = 0;
+
+      function calculate(value) {
+        if (value === '+' || value === '-' || value === '*' || value === '/') {
+          operator = value;
+          previousResult = currentResult;
+          currentResult = 0;
+        } else {
+          currentResult = parseFloat(currentResult.toString() + value.toString());
+        }
+        document.getElementById('result').value = currentResult;
+      }
+
+      function calculateResult() {
+        if (operator === '+') {
+          currentResult = previousResult + currentResult;
+        } else if (operator === '-') {
+          currentResult = previousResult - currentResult;
+        } else if (operator === '*') {
+          currentResult = previousResult * currentResult;
+        } else if (operator === '/') {
+          currentResult = previousResult / currentResult;
+        }
+        document.getElementById('result').value = currentResult;
+      }
+
+      function clearResult() {
+        currentResult = 0;
+        operator = '';
+        previousResult = 0;
+        document.getElementById('result').value = currentResult;
+      }
+    </script>
+  </body>
+</html>
