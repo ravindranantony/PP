@@ -2,4 +2,34 @@
 
 h1{text-align: center;
 color:hsl(277, 52%, 32%);
+text-decoration: underline;
+text-transform: capitalize;
+text-shadow: 2px 2px;
 }
+
+      
+            p {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bolder;
+font-size:larger;
+font-style: italic;
+font-display:initial;
+}
+
+    body
+    {
+        background-image: url('flower.jpeg');
+    
+        font-size: x-large;
+        line-height: 1.8;
+
+    }
+
+h2
+{
+    letter-spacing: 5px;
+}
+table, th, td {
+    border: 1px solid black;
+    
+  }
