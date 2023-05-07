@@ -1,0 +1,22 @@
+h4,h3,h5{text-align: center;
+
+}
+
+.myDiv {
+    position:absolute;
+
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width:150 rem;
+    padding: 3 rem;
+    box-sizing: border-box;
+    border:1px solid #dadce0; 
+    border-radius:0.5px;    
+    text-align: center;
+    
+      }
+      .button {
+        float:right;
+        background-color: red;
+    }
