@@ -88,9 +88,6 @@
       border-radius: 5px;
       cursor: pointer;
     }
-<<<<<<< HEAD
-    
-=======
     
     @keyframes pulse {
       0% { transform: scale(1); }
@@ -157,5 +154,4 @@
     }
     h2 {
       font-size: x-large;
-      {
->>>>>>> c91db9710c068468b45f85c6f794e57547a5453d
+    }
