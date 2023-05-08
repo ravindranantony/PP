@@ -1,4 +1,5 @@
 Course Description: Pepper Programming
+
 Pepper Programming is an innovative and comprehensive no-code software engineering course designed to equip individuals with the skills and knowledge needed to develop software applications without traditional coding. The course provides a practical and hands-on approach to software development, focusing on empowering participants to build robust and scalable applications using visual programming tools and platforms.
 
 Currently taking place in Stockholm, Sweden, Pepper Programming is led by Senthazal Ravi (Twitter Profile), a highly experienced professional with 25 years of expertise in Software Engineering, Product Management, and AI/ML. With a deep understanding of the industry's evolving landscape, Senthazal brings a wealth of practical insights and real-world examples to the course, enriching the learning experience for participants.
