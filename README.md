@@ -20,53 +20,42 @@ Pepper Programming has ambitious plans to expand its reach by offering an online
 
 Enrolling in Pepper Programming promises to be a transformative experience, equipping participants with the skills to leverage no-code platforms and embark on a rewarding software engineering journey. Whether in Stockholm or online, this course opens doors to a world of possibilities in software development without the need for traditional coding skills.
 
-<!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-    <h1>Using Git with "PP" Project</h1>
+Clone the Repository:
 
-    <h2>Clone the Repository</h2>
-    <ol>
-        <li>Open your terminal or Git Bash.</li>
-        <li>Navigate to the directory where you want to clone the project.</li>
-        <li>Run the following command to clone the repository:</li>
-    </ol>
-    <pre><code>git clone https://github.com/ravindranantony/PP.git</code></pre>
-    <p>The project will be cloned to your local machine.</p>
+Open your terminal or Git Bash.
+Navigate to the directory where you want to clone the project.
+Run the following command to clone the repository:
 
-    <h2>Commit Changes</h2>
-    <ol>
-        <li>Make the necessary changes to the files in the project.</li>
-        <li>Once you have made your changes, navigate to the project's directory in the terminal or Git Bash.</li>
-        <li>Use the following command to stage your changes:</li>
-    </ol>
-    <pre><code>git add .</code></pre>
-    <p>This will stage all the changes you have made.</p>
-    <ol start="4">
-        <li>Next, commit your changes with a descriptive commit message:</li>
-    </ol>
-    <pre><code>git commit -m "Your commit message here"</code></pre>
-    <p>Replace "Your commit message here" with a brief and meaningful description of your changes.</p>
+git clone https://github.com/ravindranantony/PP.git
 
-    <h2>Send a Pull Request</h2>
-    <ol>
-        <li>Before sending a pull request, make sure you have committed all your changes as mentioned in the previous step.</li>
-        <li>Push your changes to your forked repository on GitHub:</li>
-    </ol>
-    <pre><code>git push origin main</code></pre>
-    <p>Note: If you are working on a branch other than "main," replace "main" with the name of your branch.</p>
-    <ol start="3">
-        <li>Visit the original project repository on GitHub (<a href="https://github.com/ravindranantony/PP">https://github.com/ravindranantony/PP</a>).</li>
-        <li>Click on the "Pull requests" tab.</li>
-        <li>Click the "New pull request" button.</li>
-        <li>Select your forked repository and the branch containing your changes.</li>
-        <li>Provide a title and description for your pull request, explaining the changes you made.</li>
-        <li>Review your pull request and click the "Create pull request" button.</li>
-    </ol>
+The project will be cloned to your local machine.
 
-    <p>That's it! You have now successfully cloned the project, committed your changes, and sent a pull request to the original repository. The project maintainers will review your changes and decide whether to merge them into the main project.</p>
-</body>
-</html>
+Commit Changes:
 
+Make the necessary changes to the files in the project.
+Once you have made your changes, navigate to the project's directory in the terminal or Git Bash.
+Use the following command to stage your changes:
+
+git add .
+This will stage all the changes you have made.
+Next, commit your changes with a descriptive commit message:
+
+git commit -m "Your commit message here"
+Replace "Your commit message here" with a brief and meaningful description of your changes.
+
+Send a Pull Request:
+
+Before sending a pull request, make sure you have committed all your changes as mentioned in the previous step.
+Push your changes to your forked repository on GitHub:
+
+git push origin main
+
+Note: If you are working on a branch other than "main," replace "main" with the name of your branch.
+Visit the original project repository on GitHub (https://github.com/ravindranantony/PP).
+Click on the "Pull requests" tab.
+Click the "New pull request" button.
+
+Select your forked repository and the branch containing your changes.
+Provide a title and description for your pull request, explaining the changes you made.
+Review your pull request and click the "Create pull request" button.
+That's it! You have now successfully cloned the project, committed your changes, and sent a pull request to the original repository. The project maintainers will review your changes and decide whether to merge them into the main project.
