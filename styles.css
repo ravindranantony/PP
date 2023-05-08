@@ -141,9 +141,7 @@
       background-color: #ddd;
       color: black;
     }
-    
-      
-    
+
     .topnav a.active {
       background-color: #04AA6D;
       color: white;
@@ -154,4 +152,8 @@
     }
     h2 {
       font-size: x-large;
+    }
+    
+    table, th, td {
+      border: 1px solid black;
     }
