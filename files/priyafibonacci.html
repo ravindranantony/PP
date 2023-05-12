@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fibonacci Series</title>
-	<script>
-		function fibonacci(n) {
-			var fib = [0, 1];
-			for (var i = 2; i <= n; i++) {
-				fib[i] = fib[i - 1] + fib[i - 2];
-			}
-			return fib;
+    <title>fibonacci series</title>
+    <p><i><b>fibonacci series</b></i></p>
+</head>
+<style>
+p {
+			font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+			text-align: center;
+			color: royalblue
+		 
 		}
 
-		function displayFibonacci() {
-			var n = document.getElementById("number").value;
-			var result = fibonacci(n);
-			document.getElementById("output").innerHTML = result.join(", ");
+
+label {
+  
+  font-size:30px;
+}
+</style>
+<script>
+	function fibonacci(n) {
+		var fib = [0, 1];
+		for (var i = 2; i <= n; i++) {
+			fib[i] = fib[i - 1] + fib[i - 2];
 		}
-	</script>
-</head>
+		return fib;
+	}
+
+	function displayFibonacci() {
+		var n = document.getElementById("number").value;
+		var result = fibonacci(n);
+		document.getElementById("output").innerHTML = result.join(", ");
+	}
+</script>
 <body>
-	<h1>Fibonacci Series</h1>
-	<label for="number">Enter a number:</label>
+	<div class="fibonacci">
+	<label for="number"><b>Enter a number:</b></label>
 	<input type="number" id="number">
 	<button onclick="displayFibonacci()">Generate</button>
 	<p id="output"></p>
+
+
+</div>
 </body>
+
 </html>
