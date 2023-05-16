@@ -3,7 +3,7 @@ body{
 }
 .container{
     height: 800px; 
-    width: 70%;
+    width: 60%;
     background-color: white;
     margin: auto;
 }
@@ -50,11 +50,13 @@ h1{
 
 }
 .design{
-    width: 20%;
-    height: 70vh;
+    width: 21%;
+    height: 100px;
     background-color: white;
     display:table;
     justify-content: center;
+    margin:0%;
+    
 
 }
 .calculator{
@@ -78,7 +80,7 @@ h1{
 form .display{
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+   
 }
 form .display input{
     text-align: right;
