@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="Hema_Style.css">
+</head>
+<body>
+    <h1>calculator</h1>
+    <div class="design">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display">
+            </div>
+<div>
+    <input type="button" value="AC" onclick="display.value=''" class="operator">
+    <input type="button" value="DE" onclick="display.value= ''"class="operator">
+    <input type="button" value="." onclick="display.value+='.'"class="operator">
+    <input type="button" value="/" onclick="display.value+='/'"class="operator">
+</div>
+<div>
+    <input type="button" value="7" onclick="display.value+='7'">
+    <input type="button" value="8"onclick="display.value+='8'">
+    <input type="button" value="9"onclick="display.value+='9'">
+    <input type="button" value="*"onclick="display.value+='*'"class="operator">
+</div>
+<div>
+    <input type="button" value="4"onclick="display.value+='4'">
+    <input type="button" value="5"onclick="display.value+='5'">
+    <input type="button" value="6"onclick="display.value+='6'">
+    <input type="button" value="-"onclick="display.value+='-'"class="operator">
+</div>
+<div>
+    <input type="button" value="1"onclick="display.value+='1'">
+    <input type="button" value="2"onclick="display.value+='2'">
+    <input type="button" value="3"onclick="display.value+='3'">
+    <input type="button" value="+"onclick="display.value+='+'"class="operator">
+</div>
+<div>
+    <input type="button" value="00"onclick="display.value+='00'">
+    <input type="button" value="0"onclick="display.value+='0'">
+    <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal operator">
+</div>
+</div>
+
+
+        </form>
+    </div>
+        
+        <hr>
+        <head>
+            <title>Fibonacci Series</title>
+            <script>
+                function fibonacci(n) {
+                    var fib = [0, 1];
+                    for (var i = 2; i <= n; i++) {
+                        fib[i] = fib[i - 1] + fib[i - 2];
+                    }
+                    return fib;
+                }
+        
+                function displayFibonacci() {
+                    var n = document.getElementById("number").value;
+                    var result = fibonacci(n);
+                    document.getElementById("output").innerHTML = result.join(", ");
+                }
+            </script>
+        </head>
+        </body>
+        <body>
+            <h1>Fibonacci Series</h1>
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number">
+            <button onclick="displayFibonacci()">Generate</button>
+            <p id="output"></p>
+        </body>
+
+        <hr> 
+        
+        <script src="Hema_script.js"></script>
+      </body>
+    </html>
+    
