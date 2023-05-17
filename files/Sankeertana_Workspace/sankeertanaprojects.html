@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sankeertana Workspace</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="sankeertana.css" />
+  </head>
+  <body>
+    <h1>Sankeertana Workspace</h1>
+   <h2>Calculator</h2>
+	<div class="calculator">
+      <input type="text" id="input" />
+      <div class="buttons">
+        <button onclick="appendToInput('**')">x^y</button>
+        <button onclick="appendToInput('sqrt(')">√</button>
+        <button onclick="appendToInput('(')">(</button>
+        <button onclick="appendToInput(')')">)</button><br>
+        <button onclick="appendToInput('7')">7</button>
+        <button onclick="appendToInput('8')">8</button>
+        <button onclick="appendToInput('9')">9</button>
+        <button onclick="appendToInput('/')">÷</button><br>
+        <button onclick="appendToInput('4')">4</button>
+        <button onclick="appendToInput('5')">5</button>
+        <button onclick="appendToInput('6')">6</button>
+        <button onclick="appendToInput('*')">x</button><br>
+        <button onclick="appendToInput('1')">1</button>
+        <button onclick="appendToInput('2')">2</button>
+        <button onclick="appendToInput('3')">3</button>
+        <button onclick="appendToInput('-')">-</button><br>
+        <button onclick="appendToInput('0')">0</button>
+        <button onclick="appendToInput('.')">.</button>
+        <button onclick="appendToInput('+')">+</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearInput()">C</button>
+      </div>
+    </div>
+    <script src="sankeertana.js"></script>
+	<hr>
+	
+	<script>
+		function fibonacci(n) {
+			var fib = [0, 1];
+			for (var i = 2; i <= n; i++) {
+				fib[i] = fib[i - 1] + fib[i - 2];
+			}
+			return fib;
+		}
+
+		function displayFibonacci() {
+			var n = document.getElementById("number").value;
+			var result = fibonacci(n);
+			document.getElementById("output").innerHTML = result.join(", ");
+		}
+	</script>
+</head>
+<body>
+	<h2>Fibonacci Series</h2>
+	<label for="number">Enter a number:</label>
+	<input type="number" id="number">
+	<button onclick="displayFibonacci()">Generate</button>
+	<p id="output"></p>
+  <hr>
+
+  <a href="https://sankeertanagautam.blogspot.com//" target="_blank">Sankeertana Workspace</a>
+
+  </body>
+</html>
