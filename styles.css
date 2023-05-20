@@ -107,8 +107,8 @@
     }
     
     #employeePhoto {
-      width: 300%;
-      height: 400%;
+      width: 200%;
+      height: 300%;
       object-fit: cover;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
