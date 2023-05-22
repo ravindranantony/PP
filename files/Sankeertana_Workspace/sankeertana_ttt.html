@@ -1,74 +1,8 @@
+Tic-Tac-Toe is a classic game played on a grid of 3x3 squares. Two players take turns marking spaces on the grid, typically using "X" and "O" symbols. The objective is to get three of your marks in a horizontal, vertical, or diagonal row.
+
+Here's an example of a Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript:
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sankeertana Workspace</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="sankeertana.css" />
-  </head>
-  <body>
-    <h1>Sankeertana Workspace</h1>
-   <h2>Calculator</h2>
-	<div class="calculator">
-      <input type="text" id="input" />
-      <div class="buttons">
-        <button onclick="appendToInput('**')">x^y</button>
-        <button onclick="appendToInput('sqrt(')">√</button>
-        <button onclick="appendToInput('(')">(</button>
-        <button onclick="appendToInput(')')">)</button><br>
-        <button onclick="appendToInput('7')">7</button>
-        <button onclick="appendToInput('8')">8</button>
-        <button onclick="appendToInput('9')">9</button>
-        <button onclick="appendToInput('/')">÷</button><br>
-        <button onclick="appendToInput('4')">4</button>
-        <button onclick="appendToInput('5')">5</button>
-        <button onclick="appendToInput('6')">6</button>
-        <button onclick="appendToInput('*')">x</button><br>
-        <button onclick="appendToInput('1')">1</button>
-        <button onclick="appendToInput('2')">2</button>
-        <button onclick="appendToInput('3')">3</button>
-        <button onclick="appendToInput('-')">-</button><br>
-        <button onclick="appendToInput('0')">0</button>
-        <button onclick="appendToInput('.')">.</button>
-        <button onclick="appendToInput('+')">+</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="clearInput()">C</button>
-      </div>
-    </div>
-    <script src="sankeertana.js"></script>
-	<hr>
-	
-	<script>
-		function fibonacci(n) {
-			var fib = [0, 1];
-			for (var i = 2; i <= n; i++) {
-				fib[i] = fib[i - 1] + fib[i - 2];
-			}
-			return fib;
-		}
-
-		function displayFibonacci() {
-			var n = document.getElementById("number").value;
-			var result = fibonacci(n);
-			document.getElementById("output").innerHTML = result.join(", ");
-		}
-	</script>
-</head>
-<body>
-	<h2>Fibonacci Series</h2>
-	<label for="number">Enter a number:</label>
-	<input type="number" id="number">
-	<button onclick="displayFibonacci()">Generate</button>
-	<p id="output"></p>
-  <hr>
-  <h2>Blog</h2>
-
-  <a href="https://sankeertanagautam.blogspot.com//" target="_blank">Sankeertana Blog</a>
-<hr>
-<h2>TicTacToe</h2>
-<p>Tic-Tac-Toe is a classic game played on a grid of 3x3 squares. Two players take turns marking spaces on the grid, typically using "X" and "O" symbols. The objective is to get three of your marks in a horizontal, vertical, or diagonal row.</p>
-
-<p>Here's an example of a Tic-Tac-Toe game implemented using HTML, CSS, and JavaScript:</p>
-
 <head>
     <title>Tic Tac Toe</title>
     <style>
@@ -218,11 +152,4 @@
         }
     </script>
 </body>
-<hr>
-<h2>Sankeertana Canva </h2>
-<a href="https://www.canva.com/design/DAFjoZPGqN4/77HIg16VevjX4RqAuQ2F_g/view?utm_content=DAFjoZPGqN4&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Sankeertana Canva Page</a>
-
-
-
-  </body>
 </html>
