@@ -68,6 +68,13 @@
       left: 15px;
       font-size: 25px;
     }
+    .center {
+      font-family: 'Times New Roman', Times, serif;
+      color:rgb(17, 3, 3);
+      position: initial;
+      font-size: 15px;
+    }
+
     table {
       width: 50%;
     }
