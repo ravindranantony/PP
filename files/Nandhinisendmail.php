@@ -2,7 +2,7 @@
     <body>
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $to = "your-email@example.com"; // Replace with your email address
+  $to = $_POST["email"]; // Replace with your email address
   $from = $_POST["email"];
   $subject = $_POST["subject"];
   $message = $_POST["message"];
