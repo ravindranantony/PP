@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style/tictactoe.css">
+  <title>Tic Tac Toe</title>
+</head>
+<body style="background-color:rgb(218, 196, 238);" align="center">
+  <h1>Tic Tac Toe</h1>
+    <div class="board">
+    <div onclick="makeMove(0, 0)"></div>
+    <div onclick="makeMove(0, 1)"></div>
+    <div onclick="makeMove(0, 2)"></div>
+    <div onclick="makeMove(1, 0)"></div>
+    <div onclick="makeMove(1, 1)"></div>
+    <div onclick="makeMove(1, 2)"></div>
+    <div onclick="makeMove(2, 0)"></div>
+    <div onclick="makeMove(2, 1)"></div>
+    <div onclick="makeMove(2, 2)"></div>
+  </div>
+
+   <button class="reset-button" onclick="resetGame()">Reset Game</button>
+<p class="message"></p>
+<script src="style/tictactoe.js"></script>
+</body>
+</html>
