@@ -9,7 +9,7 @@ body{
 }
 #header{
     height: 80px;
-    background-color: gray;
+    background-color: black;
 }
 #header img{
     height: 65px;
@@ -31,7 +31,7 @@ body{
 #header ul li a
 {
 	text-decoration:none;
-	color:black;
+	color:white;
 	font-size:23px;
 	
 }
