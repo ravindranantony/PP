@@ -1,36 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<h1 style="text-align:center;"> WORK SPACE</h1>
-</head>
 <style>
-.fcc-btn 
-{
-	background-color: #520df3;
-	color: rgb(251, 253, 244);
-	padding: 15px 25px;
-	cursor: pointer
-  }	
-  body 
+	
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(0, 255, 34);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ee730e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+body 
   {
-  background-image: url('Nandhini_BG.jpg');
+  background-image: url("NandhiniBG.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-}
+  }
 </style>
+</head>
 <body>
-	<table>
-	<tr>
-	<td><a target="_blank" class="fcc-btn" href="Nandhinicalc.html"> Calculator </a></td>
-	<td><a target="_blank" class="fcc-btn" href="Nandhinifib.html"> Fibonacci serious </a></td>
-	<td><a target="_blank" class="fcc-btn" href="https://nandhiniselvaraj.blogspot.com/"> Blogger</a></td>
-	<td><a target="_blank" class="fcc-btn" href="Nandhiniabout.html"> About me</a></td>
-	<td><a target="_blank" class="fcc-btn" href="Nandhinigame.html"> play Tic-tac-toe </a></td>
-	<td><a target="_blank" class="fcc-btn" href="https://www.canva.com/design/DAFjoVV1c48/kai0ei-jcgSnUgS0YOQy4Q/edit?utm_content=DAFjoVV1c48&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"> Canva </a></td>
-	<td><a target="_blank" class="fcc-btn" href="Nandhini_contact_form.html"> Contact mail </a></td>
-	<td><a target="_blank" class="fcc-btn" href="https://analytics.google.com/analytics/web/#/p378679566/reports/reportinghub?params=_u..nav%3Dmaui"> Google Analytics</a></td>
-</tr>
-</table>
+<ul>
+  <li><a href="Nandhinihome.html">Home</a></li>
+  <li><a href="Nandhiniabout.html">About me</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="Work.html">Work</a>
+    <div class="dropdown-content">
+      <a href="Nandhinicalc.html">Calculator</a>
+      <a href="Nandhinifib.html">Fibonacci</a>
+      <a href="Nandhinigame.html">Tic-tac-toe</a>
+	  <a href="https://nandhiniselvaraj.blogspot.com/">Bloggers</a>
+	  <a href="https://www.canva.com/design/DAFjoVV1c48/kai0ei-jcgSnUgS0YOQy4Q/edit?utm_content=DAFjoVV1c48&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Canva</a>
+	  <a href="https://analytics.google.com/analytics/web/#/p378679566/reports/reportinghub?params=_u..nav%3Dmaui"> Google Analytics </a>    
+<a href=""	
+  </div>
+  </li>
+</ul>
 </body>
 </html>
