@@ -1,92 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>welcome to priya workspace</title>
-        <p>WELCOME TO PRIYA WORKPAGE</p>
-        
-    </head>
-    <style>
-      
-        p{
-            font-size: 50px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-align: center;
-            color: rgb(12, 12, 12);
-
-        }
-        #Priyacalc
-    {
-        background-color: rgb(29, 134, 186);
-      color: white;
-      border-radius: 5px;
-      padding: 5px;
-      cursor: pointer;
-      
+<head>
+  <title>Priyadharshini Workpage</title>
+  <h1><b><i>Priyadharshini Page</i></b></h1>
+  <style>
+    h1{
+      color: bisque;
+      text-align: center;
+      font-size: 40px;
     }
-    #priyafibonacci
-    {
-        background-color: rgb(29, 134, 186);
-      color: white;
-      border-radius: 5px;
-      padding: 5px;
-      cursor: pointer;
 
+    body {
+      background-image: url('https://img.freepik.com/premium-vector/abstract-luxury-background_33767-323.jpg');
+      background-attachment: fixed;  
+  background-size: cover;
+      background-repeat: no-repeat;
+    }
+    nav {
+      background-color: #f7f4f4;
+      color: #fff;
+      padding: 5px;
+    }
     
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
     }
-    #priyablog
-    {
-        background-color: rgb(29, 134, 186);
-      color: white;
-      border-radius: 5px;
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
       padding: 5px;
-      cursor: pointer;
-
-    
     }
-    #priyattt
-    {
-        background-color: rgb(29, 134, 186);
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+ 
       color: white;
-      border-radius: 5px;
-      padding: 5px;
+     
       cursor: pointer;
-
-    
-    }
-    #dharshinicanva
-    {
-        background-color: rgb(29, 134, 186);
-      color: white;
-      border-radius: 5px;
-      padding: 5px;
-      cursor: pointer;
-
-    
-    }
-    .container{
-text-align: center;
-width: auto;
-height: 200px;
-padding-top: 100px;
 }
-#Priyacalc #priyafibonacci #priyablog #priyattt #dharshinicanva{ 
-font-size: 25px;
+.dropbtn{
+
+
+color: rgb(30, 200, 189);
+
+font-size: 24px;
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7f4f4;
+  min-width: 160px;
+ 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgba(38, 29, 172, 0.762);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 </style>
 </head>
+<script>
+   function goToLink() {
+      window.location.href = "https://www.canva.com/design/DAFjoR71q0U/b4JxeOX_Nc7pPT_Z12RFxQ/view?utm_content=DAFjoR71q0U&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu";
+    }
+</script>
+</head>
 <body>
-<div class="container">
-
-    
 
 
-        <td><a href="Priyacalc.html"><button id ="Priyacalc"> calculator</button></a></td>
-        <td><a href="priyafibonacci.html"><button id ="priyafibonacci"> fibonaccci</button></a></td>
-        <td><a href="priyablog.html"><button id ="priyablog"> Blog</button></a></td>
-        <td><a href="priyattt.html"><button id ="priyattt">TTT Game</button></a></td>
-        <td><a href="dharshinicanva.html"><button id ="dharshinicanva">Portfolio</button></a></td>
-</div>
-    </body>  
+  <nav>
+    <ul>
+      <li><div class="dropdown">
+        <button class="dropbtn">About</button>
+        <div class="dropdown-content">
+      <a href="priyahome.html">About</a></li>
+    </div>
+    <li><div class="dropdown">
+      <button class="dropbtn">Profile</button> 
+      <div class="dropdown-content">
+        <button onclick="goToLink()">Portfolio</button>
+      </div>
+    </li>
+      <li> <div class="dropdown">
+        <button class="dropbtn">Task</button> 
+        <div class="dropdown-content">
+          <a href="Priyacalc.html">calculator</a>
+          <a href="priyafibonacci.html">Fibonacci series</a>
+          <a href="priyattt.html">TTT game</a>
+          <a href="Priyafigma.html">Figma</a>
+         
+        </div>
+      </li>
+      <li> <div class="dropdown">
+        <button class="dropbtn">Blog</button> 
+        <div class="dropdown-content">
+          <a href="priyablog.html">Blog</a>
+          
+        </div>
+      </li>
+      <li><div class="dropdown">
+        <button class="dropbtn">Contact</button>
+        <div class="dropdown-content">  
+        <a href="Priyacontact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</body>
 </html>
