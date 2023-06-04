@@ -4,6 +4,12 @@
   <title>Priyadharshini Workpage</title>
   <h1><b><i>Priyadharshini Page</i></b></h1>
   <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     h1{
       color: bisque;
       text-align: center;
@@ -11,29 +17,35 @@
     }
 
     body {
-      background-image: url('https://img.freepik.com/premium-vector/abstract-luxury-background_33767-323.jpg');
+      background-image: url('background.jpeg');
       background-attachment: fixed;  
   background-size: cover;
       background-repeat: no-repeat;
     }
-    nav {
-      background-color: #f7f4f4;
-      color: #fff;
-      padding: 5px;
+    nav{
+      background: #bebdb8;
+      text-align: center;
+      
     }
     
     nav ul {
       list-style-type: none;
+      display: inline-flex;
       margin: 0;
       padding: 0;
       text-align: left;
     }
     nav ul li {
-      display: inline-block;
-      margin-right: 10px;
+    font-size: 30px;
+    
+    text-decoration: solid;
+    text-align: left;
+      margin: 10px;
+      padding: 15px;
+      width: 100px;
     }
     nav ul li a {
-      color: #fff;
+
       text-decoration: none;
       padding: 5px;
     }
@@ -47,17 +59,21 @@
   display: inline-block;
   
  
-      color: white;
+      color: rgb(35, 64, 72);
      
       cursor: pointer;
 }
 .dropbtn{
 
-
-color: rgb(30, 200, 189);
-
+background: local;
+color: #f8fafb;
+border: none;
+margin: 0;
+padding: 0;
+text-align: left;
+display: inline-block;
 font-size: 24px;
-font-style: italic;
+font-style: normal;
 font-family: Arial, Helvetica, sans-serif;
 cursor: pointer;
 }
@@ -71,7 +87,7 @@ cursor: pointer;
 }
 
 .dropdown-content a {
-  color: rgba(38, 29, 172, 0.762);
+  color: rgba(7, 7, 7, 0.762);
   padding: 12px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -96,9 +112,9 @@ cursor: pointer;
   <nav>
     <ul>
       <li><div class="dropdown">
-        <button class="dropbtn">About</button>
+        <button class="dropbtn">Home</button>
         <div class="dropdown-content">
-      <a href="priyahome.html">About</a></li>
+      <a href="priyahome.html">Home</a></li>
     </div>
     <li><div class="dropdown">
       <button class="dropbtn">Profile</button> 
@@ -113,6 +129,8 @@ cursor: pointer;
           <a href="priyafibonacci.html">Fibonacci series</a>
           <a href="priyattt.html">TTT game</a>
           <a href="Priyafigma.html">Figma</a>
+          <a href="Priyamidsommar.html">CSS Animation</a>
+
          
         </div>
       </li>
