@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>welcome to bhuvana workspace</title>
-        <p>WELCOME TO BHUVANESWARI PROJECTS</p>
-        
-    </head>
-    <style>
-        p{
-            font-size: 50px;
-            font-style: oblique;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-align: center;
-
-        }
-        #bhuvanacalculator
-    {
-        background-color: rgb(39, 186, 29);
-      color: white;
-      border-radius: 10px;
-      padding: 10px;
-      cursor: pointer;
-      
-    }
-    #bhuvanafibonacci
-    {
-        background-color: rgb(39, 186, 29);
-      color: white;
-      border-radius: 10px;
-      padding: 10px;
-      cursor: pointer;
-    }
-    #bhuvanablog
-    {
-        background-color: rgb(39, 186, 29);
-      color: white;
-      border-radius: 10px;
-      padding: 10px;
-      cursor: pointer;
-      
-    }
-    #bhuvanattt
-    {
-        background-color: rgb(39, 186, 29);
-      color: white;
-      border-radius: 10px;
-      padding: 10px;
-      cursor: pointer;
-      
-    }
-    .container{
-text-align: center;
-width: auto;
-height: 300px;
-padding-top: 150px;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+         body {
+  background-image: url('tcbpage.jpg');
 }
-#bhuvanacalculator #bhuvanafibonacci #bhuvanablog #bhuvanattt
-{ 
-font-size: 25px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0fe7e7;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(0, 34, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(4, 8, 8);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 </style>
 </head>
 <body>
-<div class="container">
 
-    </style>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Task 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="bhuvanacalculator.html">Calculator</a>
+      <a href="bhuvanafibonacci.html">FibonacciSeries</a>
+      <a href="https://bhuvaneswaritc.blogspot.com/">Blog</a>
+      <a href="bhuvanattt.html">TicTacToe</a>
+    </div>
+  </div> 
+  <a href="#contact">Contact</a>
+</div>
 
 
-        <td><a href="bhuvanacalculator.html"><button id ="bhuvanacalculator"> calculator</button></a></td>
-        <td><a href="bhuvanafibonacci.html"><button id ="bhuvanafibonacci"> fibonaccci</button></a></td>
-        <td><a href="https://bhuvaneswaritc.blogspot.com/"><button id ="bhuvanablog"> blog</button></a></td>
-        <td><a href="bhuvanattt.html"><button id ="bhuvanattt"> tictoctoe</button></a></td>
-       
-    </body>  
+
+</body>
 </html>
