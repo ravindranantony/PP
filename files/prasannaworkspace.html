@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Set height of body and the document to 100% */
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+      }
+
+      /* Style tab links */
+      .tablink {
+        background-color: #555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+      }
+
+      .tablink:hover {
+        background-color: #777;
+      }
+
+      /* Style the tab content (and add height:100% for full page content) */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 100px 20px;
+        height: 100%;
+        font-size: 40px;
+      }
+      .content-space {
+        color: white;
+        font-size: 30px;
+        padding-bottom: 30px;
+      }
+      #Calculator a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      id="defaultOpen"
+      class="tablink"
+      onclick="openPage('Home', this, '../images/home.jpeg')"
+    >
+      Home
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('Calculator', this, '../images/home.jpeg')"
+    >
+      Workspace
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('Contact', this, '../images/home.jpeg')"
+    >
+      Contact
+    </button>
+    <button
+      class="tablink"
+      onclick="openPage('About', this, '../images/home.jpeg')"
+    >
+      About
+    </button>
+
+    <div id="Home" class="tabcontent">
+      <h3>Home</h3>
+      <p class="content-space">
+        Hello, I'm Prasanna Vignesh An aspiring Frontend Developer based in
+        Stockholm, Sweden.
+      </p>
+    </div>
+
+    <div id="Calculator" class="tabcontent">
+      <h3><a href="calculator.html">Calculator</a></h3>
+      <p class="content-space">Work in Progress!!!</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p class="content-space">
+        Get in touch, or swing by for a cup of coffee.
+        https://www.linkedin.com/in/prasanna-vignesh-b0043954/
+      </p>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3>About</h3>
+      <p class="content-space">Who we are and what we do.</p>
+    </div>
+
+    <script>
+      function openPage(pageName, elmnt, img) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+          tabcontent[i].style.backgroundImage = "url(" + img + ")";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = "#323237";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

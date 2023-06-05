@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: table;
+            margin: 0 auto;
+        }
+
+        .gallery td {
+            padding: 10px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Tamil Meme Generator</h1>
+    <table class="gallery" id="gallery">
+        <!-- Images will be inserted here -->
+    </table>
+
+    <script>
+        window.onload = function() {
+            var gallery = document.getElementById('gallery');
+            var images = [
+                '/images/arya.jpg',
+                '/images/arya.jpg',
+                '/images/arya.jpg',
+                // More image links...
+            ];
+
+            var row = document.createElement('tr');
+
+            for (var i = 0; i < images.length; i++) {
+                if (i % 3 === 0 && i != 0) {  // change the '3' to any number of images you want in a row
+                    gallery.appendChild(row);
+                    row = document.createElement('tr');
+                }
+
+                var cell = document.createElement('td');
+                var img = document.createElement('img');
+                img.src = images[i];
+                cell.appendChild(img);
+                row.appendChild(cell);
+            }
+
+            // add the last row
+            gallery.appendChild(row);
+        };
+    </script>
+</body>
+</html>
