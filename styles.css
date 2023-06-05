@@ -21,10 +21,25 @@
   li a:hover {
     background-color: #111111;
   }*/
+
+  @media only screen and (max-width: 600px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    th,
+    td {
+      display: inline-block;
+    }
+    tbody {
+      white-space: normal;
+    }
+  }
+  
     h1{
         color: black;  
     }
-  
     .container {
       position: relative;
       text-align: center;
@@ -42,8 +57,8 @@
     .top-left {
       font-family: 'Times New Roman', Times, serif;
       position: absolute;
-      top: 17px;
-      left: 15px;
+      top: 20px;
+      left: 30px;
     }
     .bottom-left {
       font-family: 'Times New Roman', Times, serif;
@@ -53,9 +68,21 @@
       left: 15px;
       font-size: 25px;
     }
+    .center {
+      font-family: 'Times New Roman', Times, serif;
+      color:rgb(17, 3, 3);
+      position: initial;
+      font-size: 15px;
+    }
+
     table {
       width: 50%;
     }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+         
     h1 {
       text-align: center;
     }
@@ -96,24 +123,29 @@
     }
     
     #employeeOfMonth {
-      width: 300px;
-      height: 420px;
+      width: 800;
+      height: 800;
       border: 2px solid #ccc;
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       animation: pulse 2s infinite;
-      
-      margin-left: 530px;
     }
     
     #employeePhoto {
-      width: 300%;
-      height: 400%;
+      width: 200%;
+      height: 300%;
       object-fit: cover;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-    }
+      }
+
+    #align_center{
+      display: flex;
+      justify-content:center;
+      align-items: center;
     
+    }
+
     #employeeName {
       padding: 10px;
       text-align: center;
@@ -163,3 +195,7 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .caption p {
+      font-size: 100px;
+      }

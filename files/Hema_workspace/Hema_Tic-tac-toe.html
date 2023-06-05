@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+           .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+        }
+
+        .board {
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            gap: 15px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .cell {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: #282c34;
+            cursor: pointer;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+
+        .cell.X, .cell.O {
+            cursor: default;
+        }
+
+        .cell.X::before, .cell.O::before {
+            content: attr(data-content);
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .cell.X::before {
+            transform: scale(0);
+            animation: popIn .3s forwards;
+            color: #f00;
+        }
+
+        .cell.O::before {
+            transform: scale(0);
+            animation: popIn .3s forwards;
+            color: #00f;
+        }
+
+        @keyframes popIn {
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <div class="game-container">
+        <div class="board">
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+            <div class="cell" data-cell data-content=""></div>
+        </div>
+    </div>
+
+    <script>
+        const X_CLASS = 'X'
+        const O_CLASS = 'O'
+        const WINNING_COMBINATIONS = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6]
+        ]
+
+        const cellElements = [...document.querySelectorAll('[data-cell]')]
+        let oTurn
+
+        startGame()
+
+        function startGame() {
+            oTurn = false
+            cellElements.forEach(cell => {
+                cell.classList.remove(X_CLASS)
+                cell.classList.remove(O_CLASS)
+                cell.removeAttribute('data-content')
+                cell.removeEventListener('click', handleClick)
+                cell.addEventListener('click', handleClick, { once: true })
+            })
+        }
+
+        function handleClick(e) {
+            const cell = e.target
+            const currentClass = oTurn ? O_CLASS : X_CLASS
+            placeMark(cell, currentClass)
+            if (checkWin(currentClass)) {
+                setTimeout(() => {
+                    alert(`${currentClass} wins!`)
+                    startGame()
+                }, 300)
+            } else if (isDraw()) {
+                setTimeout(() => {
+                    alert('Draw!')
+                    startGame()
+                }, 300)
+            } else {
+                swapTurns()
+            }
+        }
+
+        function placeMark(cell, currentClass) {
+            cell.classList.add(currentClass)
+            cell.setAttribute('data-content', currentClass)
+        }
+
+        function swapTurns() {
+            oTurn = !oTurn
+        }
+
+        function checkWin(currentClass) {
+            return WINNING_COMBINATIONS.some(combination =>
+                combination.every(index => cellElements[index].classList.contains(currentClass))
+            )
+        }
+
+        function isDraw() {
+            return cellElements.every(cell => cell.classList.contains(X_CLASS) || cell.classList.contains(O_CLASS))
+        }
+    </script>
+</body>
+</html>
+
