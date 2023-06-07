@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Fibonacci Series</title>
+    <script>
+        function fibonacci(n) {
+            var fib = [0, 1];
+            for (var i = 2; i <= n; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib;
+        }
+
+        function displayFibonacci() {
+            var n = document.getElementById("number").value;
+            var result = fibonacci(n);
+            document.getElementById("output").innerHTML = result.join(", ");
+        }
+    </script>
+
+<body>
+    <h1>Fibonacci Series</h1>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number">
+    <button onclick="displayFibonacci()">Generate</button>
+    <p id="output"></p>
+</body>
+
+<hr> 
+
+<script src="Hema_script.js"></script>
+</body>
+</html>
