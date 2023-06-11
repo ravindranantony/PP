@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diwali Firecracker Animation</title>
+  <style>
+    body {
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .firecracker {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #000;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .firecracker:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 100%;
+      background-color: #f00;
+      animation: firecracker 1s infinite;
+    }
+
+    @keyframes firecracker {
+      0% {
+        height: 100%;
+      }
+      50% {
+        height: 0;
+      }
+      100% {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="firecracker"></div>
+</body>
+</html>
