@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        color: #333;
+        background-color: #f2f2f2;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .cell:hover {
+        background-color: #e6e6e6;
+      }
+
+      .cell.x {
+        color: #f44336;
+      }
+
+      .cell.o {
+        color: #2196f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cells = document.querySelectorAll(".cell");
+        let currentPlayer = "x";
+
+        cells.forEach(function (cell) {
+          cell.addEventListener("click", function () {
+            if (!cell.textContent) {
+              cell.textContent = currentPlayer.toUpperCase();
+              cell.classList.add(currentPlayer);
+
+              if (checkWin(currentPlayer)) {
+                alert("Player " + currentPlayer.toUpperCase() + " wins!");
+                resetGame();
+              } else if (isBoardFull()) {
+                alert("It's a tie!");
+                resetGame();
+              } else {
+                currentPlayer = currentPlayer === "x" ? "o" : "x";
+              }
+            }
+          });
+        });
+
+        function checkWin(player) {
+          const winningCombinations = [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8],
+            [0, 3, 6],
+            [1, 4, 7],
+            [2, 5, 8],
+            [0, 4, 8],
+            [2, 4, 6],
+          ];
+
+          return winningCombinations.some(function (combination) {
+            return combination.every(function (index) {
+              return cells[index].classList.contains(player);
+            });
+          });
+        }
+
+        function isBoardFull() {
+          return Array.from(cells).every(function (cell) {
+            return cell.textContent;
+          });
+        }
+
+        function resetGame() {
+          cells.forEach(function (cell) {
+            cell.textContent = "";
+            cell.classList.remove("x", "o");
+          });
+          currentPlayer = "x";
+        }
+      });
+    </script>
+  </body>
+</html>
