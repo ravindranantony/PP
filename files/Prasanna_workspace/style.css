@@ -88,3 +88,9 @@
   .card a{
     color: black;
   }
+  .project_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 120px;
+  }
